@@ -73,8 +73,8 @@ vLLM 最新镜像内各组件版本信息清单
      - 0.23.0
      - 0.23.0
    * - Megatron-LM
-     - core_r0.18.0
-     - core_r0.18.0
+     - core_v0.18.0
+     - core_v0.18.0
    * - MindSpeed
      - core_r0.18.0
      - core_r0.18.0
