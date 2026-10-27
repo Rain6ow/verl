@@ -64,26 +64,6 @@ torch_npu ``2.8.0.post2``、SGLang ``v0.5.10`` 和 sgl-kernel-npu ``2026.02.01``
 Megatron 相关组件采用上面的统一依赖组合，transformers 使用 ``5.10.4``。
 
 
-Ascend 950PR&950DT系列产品 最新镜像内各组件版本信息清单
-----------------------------------------------------------------
-
-================= ============
-组件               版本
-================= ============
-基础镜像            Ubuntu 22.04
-Python             3.12
-CANN               9.1.0
-torch              2.10.0
-torch_npu          2.10.0.post4
-torchvision        0.25.0
-vLLM               0.23.0
-vLLM-ascend        0.23.0
-Megatron-LM        core_r0.12.0
-MindSpeed          0c6c0c(master)
-triton-ascend      3.2.2
-================= ============
-
-
 
 
 .. _ascend-dockerfile-list:
