@@ -55,7 +55,7 @@ triton-ascend ``3.2.2``                                         NPU Triton 适�
 transformers  ``5.10.4``                                        Hugging Face 大模型库，提供模型架构与预训练权重            
 vLLM          ``0.23.0``                                        高性能 LLM 推理与服务引擎                                  
 vLLM-Ascend   ``0.23.0``                                        NPU vLLM 后端适配                                          
-Megatron-LM   ``core_r0.18.0``                                  大规模分布式训练框架                                       
+Megatron-LM   ``core_v0.18.0``                                  大规模分布式训练框架                                       
 MindSpeed     ``core_r0.18.0``                                  Megatron-LM 在昇腾 NPU 上的适配和优化组件                  
 ============= ================================================= ===================
 
