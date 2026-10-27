@@ -41,7 +41,7 @@ Megatron-Bridge 使用 ``v0.5.0``；MindSpeed-Bridge 使用仓库默认分支（
 vLLM 最新镜像内各组件版本信息清单
 ----------------------------------------------------------------
 
-.. list-table:: 软件版本配套
+.. list-table:: 
    :header-rows: 1
    :widths: 25 25 50
 
