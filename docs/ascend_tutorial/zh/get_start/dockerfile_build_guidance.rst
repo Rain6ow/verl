@@ -38,7 +38,7 @@ Megatron-LM、MindSpeed、MegatronAdaptor 使用 ``core_r0.18.0``，
 Megatron-Bridge 使用 ``v0.5.0``；MindSpeed-Bridge 使用仓库默认分支（未固定 tag/commit），
 同时安装 TransformerEngineNPU 和 MindSpeed-Ops。SGLang CI 镜像需要重建后才能使用该组合。
 
-A2/A3 vLLM 最新镜像内各组件版本信息清单
+vLLM 最新镜像内各组件版本信息清单
 ----------------------------------------------------------------
 
 .. list-table:: 软件版本配套
