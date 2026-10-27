@@ -45,18 +45,18 @@ A2/A3 vLLM 最新镜像内各组件版本信息清单
 组件               A2/A3版本    Ascend 950PR&950DT系列产品
 ================= ============ ============
 基础镜像            Ubuntu 22.04 Ubuntu 22.04
-Python             3.12
-CANN               9.1.0
-torch              2.10.0
-torch_npu          2.10.0.post4
-torchvision        0.25.0
-vLLM               0.23.0
-vLLM-ascend        0.23.0
-Megatron-LM        core_r0.18.0
-MindSpeed          core_r0.18.0
-Megatron-Bridge    0.5.0
-triton-ascend      3.2.2
-================= ============
+Python             3.12         3.12
+CANN               9.1.0        9.1.0
+torch              2.10.0       2.10.0
+torch_npu          2.10.0.post4 2.10.0.post4 
+torchvision        0.25.0       0.25.0
+vLLM               0.23.0       0.23.0
+vLLM-ascend        0.23.0       0.23.0
+Megatron-LM        core_r0.18.0 core_r0.18.0
+MindSpeed          core_r0.18.0 core_r0.18.0
+Megatron-Bridge    0.5.0        0.5.0
+triton-ascend      3.2.2        3.2.2
+================= ============ ============
 
 
 A2/A3 SGLang 镜像使用 CANN ``8.5.0``、Python ``3.11``、torch ``2.8.0``、
