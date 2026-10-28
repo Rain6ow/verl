@@ -126,31 +126,25 @@ Megatron 训练后端支持
 
 .. code:: bash
     
-    # MindSpeed
+    # 下载 MindSpeed，切换到指定 commit-id，并下载 Megatron 相关依赖
     git clone https://gitcode.com/Ascend/MindSpeed.git
-    cd MindSpeed
-    git checkout 0c6c0ceaa523a96032dee1539a52032155e6404e
-    pip install -e .
-    cd ..
-
-    # Megatron
-    git clone https://github.com/NVIDIA/Megatron-LM.git
-    cd Megatron-LM
-    git checkout core_r0.12.0
-    pip install -e .
-    cd ..
-
-    # 配置环境变量
-    export PYTHONPATH=$PYTHONPATH:your_path/Megatron-LM
-    export PYTHONPATH=$PYTHONPATH:your_path/MindSpeed
-
-    # 安装 Megatron-Bridge
-    git clone --depth 1 --branch v0.5.0 https://github.com/NVIDIA-NeMo/Megatron-Bridge.git
-    pip install -e Megatron-Bridge --no-build-isolation --no-deps
-
-    # 安装 MindSpeed-Bridge（仓库默认分支）
+    cd MindSpeed && git checkout core_r0.18.0 && cd ..
+    git clone --depth 1 --branch core_v0.18.0 https://github.com/NVIDIA/Megatron-LM.git
+    git clone --depth 1 --branch core_r0.18.0 https://gitcode.com/ascend/MegatronAdaptor.git
+    git clone --depth 1 https://gitcode.com/ascend/TransformerEngineNPU.git
+    git clone --depth 1 https://gitcode.com/ascend/MindSpeed-Ops.git
     git clone --depth 1 https://gitcode.com/ascend/MindSpeed-Bridge.git
+    git clone --depth 1 --branch v0.5.0 https://github.com/NVIDIA-NeMo/Megatron-Bridge.git
+
+    # 安装 Megatron 及 Ascend 适配组件
+    pip install -e Megatron-LM
+    pip install -e MindSpeed
+    pip install -e MegatronAdaptor
+    pip install -e TransformerEngineNPU --no-build-isolation
+    pip install -e MindSpeed-Ops --no-build-isolation --no-deps
+    pip install -r MindSpeed-Bridge/requirements.txt
     pip install -e MindSpeed-Bridge --no-deps
+    pip install -e Megatron-Bridge --no-build-isolation --no-deps
 
     # 安装 transformers
     pip install transformers==5.10.4
