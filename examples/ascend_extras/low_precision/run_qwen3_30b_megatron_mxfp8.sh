@@ -1,6 +1,18 @@
 #!/bin/bash
 set -xeuo pipefail
 
+# Ascend MXFP8 compatibility note (2026-10-31)
+# Verified verl baseline: 18eb23dde5ec84edf51a8b780a74a116524aa5cb (0.10.0.dev).
+# Use the existing Megatron 0.18 / MindSpeed 0.18 environment .
+# Temporary workaround:
+#   cd /verl
+#   git checkout 18eb23dde5ec84edf51a8b780a74a116524aa5cb
+# Commit 8f016846 (PR #8287) removed the previous Ascend MXFP8 weight-reloading support.
+# The tested main revision fails with a shape mismatch during the first weight sync.
+# We plan to restore and validate Ascend MXFP8 compatibility as soon as possible.
+# Once the fix is available and verified, use a main revision containing the fix;
+# checking out the pinned commit above will no longer be necessary.
+
 # Project Configuration
 project_name='GRPO-Qwen3-30b-A3B-BASE-MATH'
 exp_name='GRPO-Qwen3-30B-A3B-BASE-Megatron-vLLM'
